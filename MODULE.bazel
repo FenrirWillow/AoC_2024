@@ -1,3 +1,5 @@
+"""
+"""
 module(
     name = "aoc-24",
     version = "1.0",
