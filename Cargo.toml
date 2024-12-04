@@ -1,0 +1,6 @@
+[workspace]
+members = ["aocutils", "day_01"]
+
+[workspace.package]
+authors = ["Stefan Bobev <stefanbobev@hotmail.com>"]
+

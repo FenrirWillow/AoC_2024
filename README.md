@@ -19,3 +19,5 @@ This repository contains my solutions for "Advent of Code 2024".
 - Run a single day: `bazel run //day_<day number>`
 
 - Run tests for a single day: `bazel test //day_<day number>:all`
+
+- If you update any of the dependencies, you will need to regenerate the crate index. To do that, run the following command: `CARGO_BAZEL_REPIN=1 bazel sync --only=crates`

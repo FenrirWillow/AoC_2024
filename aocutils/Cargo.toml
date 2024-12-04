@@ -2,5 +2,7 @@
 name = "aocutils"
 version = "0.1.0"
 edition = "2021"
+authors.workspace = true
 
 [dependencies]
+clap = "4.5.22"

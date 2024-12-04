@@ -4,3 +4,17 @@ module(
 )
 
 bazel_dep(name = "rules_rust", version = "0.54.1")
+
+crate = use_extension("@rules_rust//crate_universe:extension.bzl", "crate")
+
+crate.from_cargo(
+    name = "crates",
+    cargo_lockfile = "//:Cargo.lock",
+    manifests = [
+        "//:Cargo.toml",
+        "//aocutils:Cargo.toml",
+        "//day_01:Cargo.toml",
+    ],
+)
+
+use_repo(crate, "crates")
