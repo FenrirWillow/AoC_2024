@@ -16,7 +16,7 @@ This repository contains my solutions for "Advent of Code 2024".
 
 ### Basics
 
-- Run a single day: `bazel run //day_<day number>`
+- Run a single day: `bazel run --config=release //day_<day number> \-- <args>`
 
 - Run tests for a single day: `bazel test //day_<day number>:all`
 
