@@ -6,9 +6,7 @@ exports_files(["example.txt"])
 rust_binary(
     name = "day_01",
     srcs = ["src/main.rs"],
-    data = [
-        "//day_01:inputs",
-    ],
+    data = glob(["inputs/*.txt"]),
     deps = [
         "//aocutils",
     ] + all_crate_deps(normal = True),
