@@ -16,6 +16,7 @@ crate.from_cargo(
         "//:Cargo.toml",
         "//aocutils:Cargo.toml",
         "//day_01:Cargo.toml",
+        "//day_02:Cargo.toml",
     ],
 )
 
