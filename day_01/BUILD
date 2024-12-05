@@ -1,8 +1,6 @@
 load("@crates//:defs.bzl", "all_crate_deps")
 load("@rules_rust//rust:defs.bzl", "rust_binary")
 
-exports_files(["example.txt"])
-
 rust_binary(
     name = "day_01",
     srcs = ["src/main.rs"],
