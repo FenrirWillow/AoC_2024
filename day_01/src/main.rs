@@ -13,7 +13,7 @@ fn main() {
     let crate_name = clap::crate_name!();
     let cli_inputpath = path::Path::new(&args.input);
 
-    let input_data = aocutils::read_input_file_by_line(cli_inputpath, &crate_name);
+    let input_data = aocutils::read_input_file_by_line(cli_inputpath, crate_name);
 
     let (first_column, second_column) = input_data
         .iter()
