@@ -6,5 +6,6 @@ authors.workspace = true
 
 [dependencies]
 aocutils = { path = "../aocutils" }
+regex = { version = "1.11.1" }
 clap = { version = "4.5.22", features = ["derive", "cargo"] }
 itertools = { version = "0.13.0" }
