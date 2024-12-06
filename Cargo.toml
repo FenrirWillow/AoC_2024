@@ -1,5 +1,5 @@
 [workspace]
-members = ["aocutils", "day_01", "day_02"]
+members = ["aocutils", "day_01", "day_02", "day_03"]
 
 [workspace.package]
 authors = ["Stefan Bobev <stefanbobev@hotmail.com>"]
