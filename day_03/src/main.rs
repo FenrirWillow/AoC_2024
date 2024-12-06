@@ -1,5 +1,4 @@
 use clap::Parser;
-use regex;
 use std::{env, path};
 
 #[derive(Parser, Debug)]
@@ -24,5 +23,5 @@ fn main() {
         .map(|(_, [a, b])| a.parse::<i32>().unwrap() * b.parse::<i32>().unwrap())
         .sum::<i32>();
 
-    println!("Sum of all found: {total_mul_sum}",);
+    println!("Total sum of all multiples: {total_mul_sum}",);
 }
