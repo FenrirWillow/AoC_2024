@@ -1,0 +1,10 @@
+[package]
+name = "day_05"
+version = "0.1.0"
+edition = "2021"
+authors.workspace = true
+
+[dependencies]
+aocutils = { path = "../aocutils" }
+clap = { version = "4.5.22", features = ["derive", "cargo"] }
+itertools = { version = "0.13.0" }
